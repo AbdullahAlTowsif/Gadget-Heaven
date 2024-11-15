@@ -1,0 +1,173 @@
+[
+    {
+      "product_id": "1001",
+      "product_title": "MacBook Pro 16-inch",
+      "product_image": "https://i.ibb.co.com/zHLG3xq/Mac-Book-Pro-16-inch.jpg",
+      "category": "Laptop",
+      "price": 2499.99,
+      "description": "Apple's high-performance laptop with a stunning Retina display and the powerful M1 Pro chip.",
+      "Specification": [
+        "16-inch Retina display",
+        "1TB SSD storage",
+        "16GB RAM",
+        "Apple M1 Pro chip",
+        "Touch Bar and Touch ID"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "1002",
+      "product_title": "Dell XPS 13",
+      "product_image": "https://i.ibb.co.com/SVJjxtT/Dell-XPS-13.jpg",
+      "category": "Laptop",
+      "price": 1199.99,
+      "description": "A premium ultrabook with a sleek design and an edge-to-edge display.",
+      "Specification": [
+        "13.4-inch FHD+ InfinityEdge display",
+        "512GB SSD storage",
+        "16GB RAM",
+        "Intel Core i7 processor",
+        "Backlit keyboard"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "1003",
+      "product_title": "HP Spectre x360",
+      "product_image": "https://i.ibb.co.com/CnWf3V6/HP-Spectre-x360.jpg",
+      "category": "Laptop",
+      "price": 1499.99,
+      "description": "A versatile convertible laptop with a beautiful touchscreen and powerful performance.",
+      "Specification": [
+        "13.3-inch FHD touch display",
+        "512GB SSD storage",
+        "16GB RAM",
+        "Intel Core i7 processor",
+        "360-degree hinge"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "1004",
+      "product_title": "Lenovo ThinkPad X1 Carbon",
+      "product_image": "https://i.ibb.co.com/NZ9CCfn/Lenovo-Think-Pad-X1-Carbon.jpg",
+      "category": "Laptop",
+      "price": 1399.99,
+      "description": "A durable business laptop with excellent keyboard and lightweight design.",
+      "Specification": [
+        "14-inch FHD display",
+        "1TB SSD storage",
+        "16GB RAM",
+        "Intel Core i7 processor",
+        "Fingerprint reader"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "1005",
+      "product_title": "ASUS ROG Zephyrus G14",
+      "product_image": "https://i.ibb.co.com/CPKD7Yy/ASUS-ROG-Zephyrus-G14.jpg",
+      "category": "Laptop",
+      "price": 1599.99,
+      "description": "A compact gaming laptop with a powerful GPU and impressive battery life.",
+      "Specification": [
+        "14-inch FHD display",
+        "1TB SSD storage",
+        "16GB RAM",
+        "AMD Ryzen 9 processor",
+        "NVIDIA GeForce RTX 3060"
+      ],
+      "availability": false,
+      "rating": 4.6
+    },
+    {
+      "product_id": "1006",
+      "product_title": "Microsoft Surface Laptop 4",
+      "product_image": "https://i.ibb.co.com/sjxpJtv/Microsoft-Surface-Laptop-4.jpg",
+      "category": "Laptop",
+      "price": 1299.99,
+      "description": "A sleek laptop with a high-resolution display and great battery life.",
+      "Specification": [
+        "13.5-inch PixelSense display",
+        "512GB SSD storage",
+        "16GB RAM",
+        "Intel Core i5 processor",
+        "Touchscreen"
+      ],
+      "availability": true,
+      "rating": 4.4
+    },
+    {
+      "product_id": "2001",
+      "product_title": "Samsung Galaxy S21 Ultra",
+      "product_image": "https://i.ibb.co.com/4Jx6qGv/Samsung-Galaxy-S21-Ultra.jpg",
+      "category": "Smartphone",
+      "price": 1199.99,
+      "description": "Samsung's flagship smartphone with a powerful camera and stunning display.",
+      "Specification": [
+        "6.8-inch Dynamic AMOLED display",
+        "128GB storage",
+        "Quad-camera setup",
+        "5000mAh battery",
+        "5G support"
+      ],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "2002",
+      "product_title": "Google Pixel 6 Pro",
+      "product_image": "https://i.ibb.co.com/z7DCLGy/Google-Pixel-6-Pro.jpg",
+      "category": "Smartphone",
+      "price": 899.99,
+      "description": "Google's latest smartphone with an excellent camera and clean Android experience.",
+      "Specification": [
+        "6.7-inch OLED display",
+        "128GB storage",
+        "Dual-camera setup",
+        "4600mAh battery",
+        "5G support"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "3001",
+      "product_title": "iPhone 13 Pro Max",
+      "product_image": "https://i.ibb.co.com/bXtj0sq/i-Phone-13-Pro-Max.jpg",
+      "category": "iPhone",
+      "price": 1099.99,
+      "description": "Apple's top-of-the-line iPhone with a ProMotion display and impressive camera system.",
+      "Specification": [
+        "6.7-inch Super Retina XDR display",
+        "128GB storage",
+        "Triple-camera system",
+        "4352mAh battery",
+        "5G support"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "3002",
+      "product_title": "iPhone 13 Mini",
+      "product_image": "https://i.ibb.co.com/HTHnKNX/i-Phone-13-Mini.jpg",
+      "category": "iPhone",
+      "price": 699.99,
+      "description": "A compact iPhone with powerful performance and excellent camera quality.",
+      "Specification": [
+        "5.4-inch Super Retina XDR display",
+        "128GB storage",
+        "Dual-camera system",
+        "2438mAh battery",
+        "5G support"
+      ],
+      "availability": false,
+      "rating": 4.5
+    }
+  ]
+  
