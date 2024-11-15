@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayouts from "../layouts/MainLayouts";
 import Home from "../pages/Home";
 import GadgetCards from "../components/GadgetCards";
+import Statistics from "../pages/Statistics";
+import Dashboard from "../pages/Dashboard";
 
 const routes = createBrowserRouter([
     {
@@ -37,8 +39,12 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/statistics',
-                // element:
+                element: <Statistics></Statistics>
             },
+            {
+                path: '/dashboard',
+                element: <Dashboard></Dashboard>
+            }
         ]
     },
 ]);
