@@ -34,7 +34,11 @@ const routes = createBrowserRouter([
                         element: <GadgetCards></GadgetCards>
                     }
                 ]
-            }
+            },
+            {
+                path: '/statistics',
+                // element:
+            },
         ]
     },
 ]);

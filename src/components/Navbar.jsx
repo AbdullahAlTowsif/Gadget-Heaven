@@ -28,13 +28,13 @@ const Navbar = () => {
                         tabIndex={0}
                         className='menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow'
                     >
-                        <NavLink className={`text-white hover:font-semibold`}>
+                        <NavLink to={'/'} className={`text-white hover:font-semibold`}>
                             Home
                         </NavLink>
-                        <NavLink className={`text-white hover:font-semibold`}>
+                        <NavLink to={'/statistics'} className={`text-white hover:font-semibold`}>
                             Statistics
                         </NavLink>
-                        <NavLink className={`text-white hover:font-semibold`}>
+                        <NavLink to={'/dashboard'} className={`text-white hover:font-semibold`}>
                             Dashboard
                         </NavLink>
                     </ul>
@@ -45,13 +45,13 @@ const Navbar = () => {
             </div>
             <div className='navbar-end hidden lg:flex'>
                 <ul className='menu menu-horizontal px-1 gap-8'>
-                    <NavLink className={`text-white hover:font-bold`}>
+                    <NavLink to={`/`} className={`text-white hover:font-bold`}>
                         Home
                     </NavLink>
-                    <NavLink className={`text-white hover:font-bold`}>
+                    <NavLink to={'statistics'} className={`text-white hover:font-bold`}>
                         Statistics
                     </NavLink>
-                    <NavLink className={`text-white hover:font-bold`}>
+                    <NavLink to={'dashboard'} className={`text-white hover:font-bold`}>
                         Dashboard
                     </NavLink>
                 </ul>

@@ -10,7 +10,7 @@ const Categories = ({categories}) => {
                     <NavLink
                         key={idx}
                         to={`/category/${category.category}`}
-                        className="w-full py-2 text-center text-gray-600 bg-gray-200 rounded-full hover:bg-gray-300 font-semibold"
+                        className={({isActive})=> `w-full py-2 text-center text-gray-600 bg-gray-200 rounded-full hover:bg-gray-300 font-semibold ${isActive ? 'bg-blue-500': ''}`}
                     >
                         {category.category}
                     </NavLink>
