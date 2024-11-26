@@ -47,7 +47,7 @@ const Dashboard = () => {
             {/* Dynamic Data */}
             <div>
                 {
-                    isActive.status ? <DashCardHeading></DashCardHeading> : <WishCardHeading></WishCardHeading>
+                    isActive.status ? <DashCardHeading gadget={gadget}></DashCardHeading> : <WishCardHeading></WishCardHeading>
                 }
                 {
                     gadget.map((gadget, i) => (
