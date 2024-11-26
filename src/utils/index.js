@@ -24,4 +24,4 @@ const addToCart = gadget => {
     toast.success("Successfully added!");
 }
 
-export { addToCart }
+export { addToCart, getAllCarts }
