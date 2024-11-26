@@ -3,9 +3,7 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 const WishlistCards = ({gadget}) => {
     return (
         <div>
-            <div className="flex justify-between items-center mt-12">
-                <h1 className="font-bold text-2xl">Cart</h1>
-            </div>
+            
             <div className="flex space-x-5 shadow-lg mt-5 justify-between p-5">
                 <div className="flex space-x-4">
                     <img className="w-52 h-32 object-cover" src={gadget.product_image} alt="" />

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { getAllCarts } from "../utils";
 import DashboardCards from "../components/DashboardCards";
 import WishlistCards from "../components/WishlistCards";
+import DashCardHeading from "../components/DashCardHeading";
+import WishCardHeading from "../components/WishCardHeading";
 
 const Dashboard = () => {
 
@@ -37,13 +39,16 @@ const Dashboard = () => {
                 <h1 className="text-4xl font-bold text-white">Dashboard</h1>
                 <p className="text-white text-center mt-4 max-w-3xl">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
                 <div className="mt-4">
-                    <button onClick={()=> handleIsActive('cart')} className="btn mr-6 rounded-full text-[#9538E2]">Cart</button>
-                    <button onClick={()=> handleIsActive('wishlist')} className="btn rounded-full bg-[#9538E2] text-white">Wishlist</button>
+                    <button onClick={()=> handleIsActive('cart')} className={`${isActive.status ? 'btn active bg-white border border-purple-700 rounded-full' : 'btn'}`}>Cart</button>
+                    <button onClick={()=> handleIsActive('wishlist')} className={`${isActive.status ? 'btn' : 'btn active rounded-full'}`}>Wishlist</button>
                 </div>
             </div>
         
             {/* Dynamic Data */}
             <div>
+                {
+                    isActive.status ? <DashCardHeading></DashCardHeading> : <WishCardHeading></WishCardHeading>
+                }
                 {
                     gadget.map((gadget, i) => (
                         isActive.status ? <DashboardCards key={i} gadget={gadget}></DashboardCards> : <WishlistCards key={i} gadget={gadget}></WishlistCards>
