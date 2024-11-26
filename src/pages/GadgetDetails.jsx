@@ -3,7 +3,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
 import { BsCart2 } from "react-icons/bs";
 import { CiHeart } from "react-icons/ci";
-import { addToCart } from "../utils";
+import { addToCart, addToWishlist } from "../utils";
 
 const GadgetDetails = () => {
     const { id } = useParams();
@@ -19,6 +19,10 @@ const GadgetDetails = () => {
     // Handle Cart Button
     const handleCart = (gadget) => {
         addToCart(gadget)
+    }
+    // Handle Wishlist
+    const handleWishlist = (gadget) => {
+        addToWishlist(gadget)
     }
 
     return (
@@ -79,7 +83,7 @@ const GadgetDetails = () => {
                             <button onClick={()=> handleCart(gadget)} className="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 flex justify-center items-center">
                                 Add To Cart <BsCart2 />
                             </button>
-                            <div className="btn rounded-full text-sm">
+                            <div onClick={()=> handleWishlist(gadget)} className="btn rounded-full text-sm">
                                 <CiHeart />
                             </div>
                         </div>
