@@ -13,6 +13,11 @@ const Dashboard = () => {
         setGadget(carts)
     }, [])
 
+    const handleSort = () => {
+        const sorted = [...gadget].sort((a, b) => b.price - a.price);
+        setGadget(sorted);
+    };
+
     const [isActive, setIsActive] = useState({
         status: true,
         check: 'cart'
@@ -47,7 +52,7 @@ const Dashboard = () => {
             {/* Dynamic Data */}
             <div>
                 {
-                    isActive.status ? <DashCardHeading gadget={gadget}></DashCardHeading> : <WishCardHeading></WishCardHeading>
+                    isActive.status ? <DashCardHeading gadget={gadget} handleSort={handleSort}></DashCardHeading> : <WishCardHeading></WishCardHeading>
                 }
                 {
                     gadget.map((gadget, i) => (
