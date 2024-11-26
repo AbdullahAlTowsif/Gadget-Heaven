@@ -1,6 +1,6 @@
 import { SlEqualizer } from "react-icons/sl";
 
-const DashCardHeading = ({gadget, handleSort}) => {
+const DashCardHeading = ({gadget, handleSort, handlePurchase}) => {
     console.log(gadget)
     let sum = 0
     gadget.map((item) => (
@@ -15,7 +15,7 @@ const DashCardHeading = ({gadget, handleSort}) => {
                 <div className="flex space-x-4">
                     <h1 className="font-bold text-2xl">Total Cost: {sum.toFixed(2)}</h1>
                     <button onClick={handleSort} className="btn flex text-[#9538E2] bg-white rounded-full">Sort by Price <SlEqualizer /> </button>
-                    <button className="btn bg-[#9538E2] text-white rounded-full">Purchase</button>
+                    <button onClick={handlePurchase} className="btn bg-[#9538E2] text-white rounded-full">Purchase</button>
                 </div>
             </div>
         </div>

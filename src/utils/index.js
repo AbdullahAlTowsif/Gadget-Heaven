@@ -43,4 +43,9 @@ const addToWishlist = gadget => {
     toast.success("Successfully added to wishlist!");
 }
 
-export { addToCart, getAllCarts, addToWishlist, getAllWishlist } 
+const removeCart = () => {
+    // const carts = getAllCarts()
+    localStorage.removeItem('carts')
+  }
+
+export { addToCart, getAllCarts, addToWishlist, getAllWishlist, removeCart }
