@@ -13,6 +13,11 @@ const Dashboard = () => {
 
     const [gadget, setGadget] = useState([])
 
+    let sum = 0
+    gadget.map((item) => (
+        sum = sum + item.price
+    ))
+
     const [isModalOpen, setIsModalOpen] = useState(false);
     const navigate = useNavigate();
 
@@ -88,7 +93,7 @@ const Dashboard = () => {
                         <img src={GroupPic} alt="" />
                         <h2 className="text-2xl font-bold">Payment Successfull!</h2>
                         <p>Thanks for purchasing.</p>
-                        <p>Total: 299</p>
+                        <p>Total: {sum}</p>
                         <button onClick={handleCloseModal} className="btn bg-purple-600 text-white mt-4">
                             Close
                         </button>
