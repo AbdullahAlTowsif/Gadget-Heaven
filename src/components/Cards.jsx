@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const Cards = ({ gadget }) => {
-    const { product_title, product_image, price, category } = gadget;
+    const { product_title, product_image, price, category, product_id } = gadget;
     return (
         <div className="card card-compact bg-base-100 shadow-xl">
-            <Link to={`/category/${category}`}>
+            <Link to={`/gadget/${product_id}`}>
                 <figure>
                     <img className="w-72 h-44 object-cover"
                         src={product_image}
