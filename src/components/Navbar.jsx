@@ -45,7 +45,7 @@ const Navbar = () => {
                         </NavLink>
                     </ul>
                 </div>
-                <Link to='/' className='text-white text-xl font-bold hover:text-black'>
+                <Link to='/' className='text-white text-xl font-bold hover:text-red-700'>
                     Gadget Heaven
                 </Link>
             </div>
