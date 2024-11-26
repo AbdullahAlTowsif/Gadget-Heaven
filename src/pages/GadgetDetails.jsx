@@ -3,6 +3,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
 import { BsCart2 } from "react-icons/bs";
 import { CiHeart } from "react-icons/ci";
+import { addToCart } from "../utils";
 
 const GadgetDetails = () => {
     const { id } = useParams();
@@ -14,6 +15,11 @@ const GadgetDetails = () => {
         const singleData = data.find(gadget => gadget.product_id == id)
         setGadget(singleData)
     }, [data, id]);
+
+    // Handle Cart Button
+    const handleCart = (gadget) => {
+        addToCart(gadget)
+    }
 
     return (
         <div className="min-h-screen">
@@ -70,7 +76,7 @@ const GadgetDetails = () => {
                             </span>
                         </div>
                         <div className="mt-6 flex space-x-4">
-                            <button className="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 flex justify-center items-center">
+                            <button onClick={()=> handleCart(gadget)} className="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 flex justify-center items-center">
                                 Add To Cart <BsCart2 />
                             </button>
                             <div className="btn rounded-full text-sm">
