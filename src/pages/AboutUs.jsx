@@ -1,6 +1,11 @@
+import { Helmet } from "react-helmet-async";
+
 const AboutUs = () => {
     return (
         <div>
+            <Helmet>
+                <title>About Us | Gadget Heaven</title>
+            </Helmet>
             <div className="bg-[#9538E2] min-h-[200px] flex flex-col justify-center items-center space-y-5 p-5">
                 <h1 className="text-4xl font-bold text-white">About Us</h1>
                 <p className="text-white text-center mt-4 max-w-3xl">Welcome to Gadget Heaven, where passion meets innovation! We are dedicated to bringing you the latest and greatest in specific industry or niche, helping you stay ahead in this fast-paced world.</p>

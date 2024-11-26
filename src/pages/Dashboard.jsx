@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import Modal from "../components/Modal";
 import GroupPic from "../assets/Group.png"
+import { Helmet } from "react-helmet-async";
 
 const Dashboard = () => {
 
@@ -66,6 +67,9 @@ const Dashboard = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Dashboard | Gadget Heaven</title>
+            </Helmet>
             <div className="bg-[#9538E2] min-h-[300px] flex flex-col justify-center items-center">
                 <h1 className="text-4xl font-bold text-white">Dashboard</h1>
                 <p className="text-white text-center mt-4 max-w-3xl">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>

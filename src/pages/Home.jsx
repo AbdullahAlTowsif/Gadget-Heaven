@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import Heading from "../components/Heading";
 import Categories from "../components/Categories";
 import GadgetCards from "../components/GadgetCards";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
     // Access the loaded data (both categories and gadgets)
@@ -14,6 +15,9 @@ const Home = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Homepage | Gadget Heaven</title>
+            </Helmet>
             <Banner />
             <BackImage />
             <Heading />
