@@ -4,6 +4,7 @@ import DashboardCards from "../components/DashboardCards";
 import WishlistCards from "../components/WishlistCards";
 import DashCardHeading from "../components/DashCardHeading";
 import WishCardHeading from "../components/WishCardHeading";
+import toast from "react-hot-toast";
 
 const Dashboard = () => {
 
@@ -15,6 +16,7 @@ const Dashboard = () => {
 
     const handleSort = () => {
         const sorted = [...gadget].sort((a, b) => b.price - a.price);
+        toast.success("Sorted Successfully!");
         setGadget(sorted);
     };
 

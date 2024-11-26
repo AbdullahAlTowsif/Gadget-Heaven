@@ -1,11 +1,14 @@
 import { BsCart2 } from "react-icons/bs";
 import { CiHeart } from "react-icons/ci";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 
 const Navbar = () => {
+
+    const location = useLocation();
+    const isHomePage = location.pathname === '/';
     return (
-        <div className='w-11/12 mx-auto px-5 navbar backdrop-blur-xl bg-[#9538E2] z-50 rounded-t-xl'>
+        <div className={`w-11/12 mx-auto px-5 navbar backdrop-blur-xl  z-50 rounded-t-xl ${isHomePage ? "bg-[#9538E2] text-white" : "bg-black"}`}>
             <div className='navbar-start'>
                 <div className='dropdown'>
                     <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
