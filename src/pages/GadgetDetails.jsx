@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
+import { BsCart2 } from "react-icons/bs";
+import { CiHeart } from "react-icons/ci";
 
 const GadgetDetails = () => {
     const { id } = useParams();
@@ -68,12 +70,12 @@ const GadgetDetails = () => {
                             </span>
                         </div>
                         <div className="mt-6 flex space-x-4">
-                            <button className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">
-                                Add To Cart
+                            <button className="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 flex justify-center items-center">
+                                Add To Cart <BsCart2 />
                             </button>
-                            <button className="bg-gray-200 text-gray-800 px-6 py-2 rounded-lg hover:bg-gray-300">
-                                Add To Wishlist
-                            </button>
+                            <div className="btn rounded-full text-sm">
+                                <CiHeart />
+                            </div>
                         </div>
                     </div>
                 </div>

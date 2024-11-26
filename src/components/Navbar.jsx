@@ -37,6 +37,9 @@ const Navbar = () => {
                         <NavLink to={'/dashboard'} className={`text-white hover:font-semibold`}>
                             Dashboard
                         </NavLink>
+                        <NavLink to={'/aboutus'} className={`text-white hover:font-semibold`}>
+                            About Us
+                        </NavLink>
                     </ul>
                 </div>
                 <Link to='/' className='text-white text-xl font-bold hover:text-black'>
@@ -53,6 +56,9 @@ const Navbar = () => {
                     </NavLink>
                     <NavLink to={'dashboard'} className={`text-white hover:font-bold`}>
                         Dashboard
+                    </NavLink>
+                    <NavLink to={'aboutus'} className={`text-white hover:font-bold`}>
+                        About Us
                     </NavLink>
                 </ul>
             </div>
